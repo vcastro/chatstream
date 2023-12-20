@@ -10,7 +10,7 @@ def server(input: Inputs, output: Outputs, session: Session):
     chat_module = chatstream.chat_server(
         "chat1",
         model="gpt-4",
-        system_prompt=phenotype_procedure_prompt_csv,
+        system_prompt=phenotype_medication_prompt_csv,
         text_input_placeholder="Enter a phenotype...",
         temperature=0,
         button_label="Get Phenotype"
